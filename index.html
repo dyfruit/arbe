@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1400">
+  <title>arbe_main</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="shortcut icon" href="img/favicon_png.png" type="image/x-icon">
+  <!--aos-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <div class="swiper arbe_main">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="#"><img src="img/top_baner.png" alt="top_baner"></a></div>
+      <div class="swiper-slide"><a href="#"><img src="img/top_baner.png" alt="top_baner"></a></div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".arbe_main", {
+      direction: "vertical",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 1800,
+        disableOnInteraction: false,
+      },
+      loop: true,
+    });
+  </script>
+
+
+  <div id="header">
+    <!--header-->
+    <h1 class="logo"><a href="https://dyfruit.github.io/arbe/"><img src="img/page_logo.png" alt="logo"></a></h1>
+    <div class="header_inner">
+      <!--header_inner-->
+      <ul class="list1">
+        <!--login_menu-->
+        <li><a href="#"><img src="img/login_bt.png" alt="login_bt"></a></li>
+        <li><a href="#"><img src="img/join_bt.png" alt="join_bt"></a></li>
+        <li><a href="#"><img src="img/cart_bt.png" alt="cart_bt"></a></li>
+        <input type="search" class="search1" placeholder="Search">
+      </ul>
+      <!--login_menu-->
+      <ul id="gnb1" class="clearfix">
+        <!--gnb_clearfix-->
+        <li><a href="https://dyfruit.github.io/arbe_about/">ABOUT</a></li>
+        <li><a href="https://dyfruit.github.io/arbe_shop/">SHOP</a></li>
+      </ul>
+      <ul id="gnb2" class="clearfix">
+        <li><a href="https://dyfruit.github.io/arbe_collab/">COLLAB</a></li>
+        <li><a href="https://dyfruit.github.io/arbe_event/">EVENT</a></li>
+      </ul>
+    </div>
+    <!--header_inner-->
+  </div>
+  <!--header-->
+  <div class="video">
+    <!--video-->
+    <video src="video/video.mp4" autoplay muted loop playsinline></video>
+  </div>
+  <!--video-->
+
+  <div id="gnb3" class="clearfix">
+    <!--gnb3-->
+    <div id="gnb3_inner">
+      <!--gnb3_inner-->
+      <p class="loop_logo" data-aos="zoom-in" data-aos-duration="2000"><img src="img/loop_logo.png" alt="loop_logo"></p>
+      <h6 class="clear"></h6>
+      <p class="img1-1" data-aos="fade-right" data-aos-duration="1500"><img src="img/1-1.png" alt="1-1"></p>
+      <h6 class="clear"></h6>
+      <p class="img1-2" data-aos="fade-left" data-aos-duration="1500"><img src="img/1-2.jpg" alt="1-2"></p>
+      <h6 class="clear"></h6>
+      <p class="img1-3" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out-back">
+        <img src="img/1-3_font.png" alt="1-3">
+      </p>
+      <h6 class="clear"></h6>
+    </div>
+    <!--gnb3_inner-->
+  </div>
+  <!--gnb3-->
+  <script>
+    AOS.init();
+  </script>
+
+  <div class="best">
+    <!--best-->
+    <p class="font_40">BEST SELECT</p><br>
+    <p class="font_20">week's most popular items</p>
+  </div>
+  <!--best-->
+
+  <div id="arrow_relativ">
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper best_slide">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="https://dyfruit.github.io/arbe_shop/"><img src="img/2-1.jpg" alt="2-1"></a>
+        </div>
+        <div class="swiper-slide"><a href="https://dyfruit.github.io/arbe_shop/"><img src="img/2-2.jpg" alt="2-2"></a>
+        </div>
+        <div class="swiper-slide"><a href="https://dyfruit.github.io/arbe_shop/"><img src="img/2-3.jpg" alt="2-3"></a>
+        </div>
+        <div class="swiper-slide"><a href="https://dyfruit.github.io/arbe_shop/"><img src="img/2-4.jpg" alt="2-4"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--arrow_box-->
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".best_slide", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      slidesPerGroup: 4,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+
+  <div id="gnb4" class="clearfix">
+    <!--new_product-->
+    <p class="font_40">NEW PRODUCT</p><br>
+    <p class="font_20">Meet the season-limited products</p>
+    <div id="hover" class="clearfix">
+      <!--img_hover-->
+      <div class="img3-1">
+        <a href="https://dyfruit.github.io/arbe_shop/"><img src="img/3-1.png" alt="3-1"></a>
+      </div>
+      <div class="img3-2">
+        <a href="https://dyfruit.github.io/arbe_shop/"><img src="img/3-2.png" alt="3-1"></a>
+      </div>
+      <div class="img3-3">
+        <a href="https://dyfruit.github.io/arbe_shop/"><img src="img/3-3.png" alt="3-1"></a>
+      </div>
+    </div>
+    <!--img_hover-->
+    <h1 class="bt2"><a href="https://dyfruit.github.io/arbe_shop/"><img src="img/bt2.png" alt="bt2"></a></h1>
+  </div>
+  <!--gnb4-->
+  <div class="fixed">
+    <!--attachment-->
+  </div>
+  <!--attachment-->
+
+  <div id="gnb5" class="clearfix">
+    <!--gnb5-->
+    <p class="font_40">NEWS & EVENT</p><br>
+    <p class="font_20">Receive various news and benefits</p>
+    <div class="event">
+      <!--event-->
+      <div class="event_1">
+        <!--event1-->
+        <a href="https://dyfruit.github.io/arbe_event/"><img src="img/5-1.jpg" alt="event1"></a>
+      </div>
+      <!--event1-->
+      <div class="event_2">
+        <!--event2-->
+        <a href="https://dyfruit.github.io/arbe_event/"><img src="img/5-2.jpg" alt="event1"></a>
+      </div>
+      <!--event2-->
+    </div>
+    <!--event-->
+  </div>
+  <!--gnb5-->
+
+  <div id="gnb6" class="clearfix">
+    <!--instagram-->
+    <p class="font_40">instagram</p><br>
+    <p class="font_20">Follow us and get news</p>
+  </div>
+  <!--instagram-->
+  <div id="instagram" class="clearfix">
+    <div class="insta1">
+      <a href="https://dyfruit.github.io/arbe_shop/"><img src="img/6-1.jpg" alt="insta1">
+      </a>
+    </div>
+    <div class="insta2">
+      <a href="https://dyfruit.github.io/arbe_shop/"><img src="img/6-2.jpg" alt="insta2"></a>
+    </div>
+    <div class="insta3">
+      <a href="https://dyfruit.github.io/arbe_shop/"><img src="img/6-3.jpg" alt="insta3"></a>
+    </div>
+    <div class="insta4">
+      <a href="https://dyfruit.github.io/arbe_shop/"><img src="img/6-4.jpg" alt="insta4"></a>
+    </div>
+  </div>
+  <!--clearfix-->
+
+  <div id="pooter" class="clearfix">
+    <!--pooter-->
+    <img class="pooter_forest" src="img/pooter_forest.png" alt="pooter_forest">
+    <div class="pooter_inner">
+      <div class="pooter_bg">
+        <div class="pooter_text">
+          <!--pooter_text-->
+          <br>
+          © arbe_seoul&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <a href="#">Terms of service</a>&nbsp&nbsp&nbsp&nbsp&nbsp
+          l
+          &nbsp&nbsp&nbsp&nbsp&nbsp<a href="#">privacy policy</a><br><br><br><br>
+          10th floor, Dawon Jungang Tower, 26, Jungang-daero, Jung-gu, Busan<br>
+          Business registration number: 1234-81-14486<br>
+          Mail-order business report number: Busan-15737<br>
+          Customer Care Support Team: (051) 6974-3228 dyfruit@arbe.com<br>
+          Hosting service provider: LG Uplus Co., Ltd.<br>
+        </div>
+      </div>
+    </div>
+    <!--pooter-->
+</body>
+
+</html>

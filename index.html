@@ -27,18 +27,31 @@
 
   <!-- Initialize Swiper -->
   <script>
+    // var swiper = new Swiper(".arbe_main", {
+    //   direction: "vertical",
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //   },
+    //   autoplay: {
+    //     delay: 1800,
+    //     disableOnInteraction: false,
+    //   },
+    //   loop: true,
+    // });
     var swiper = new Swiper(".arbe_main", {
-      direction: "vertical",
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      autoplay: {
-        delay: 1800,
-        disableOnInteraction: false,
-      },
-      loop: true,
-    });
+  direction: "vertical",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 1800,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  loopAdditionalSlides: 1, // 최소 슬라이드 개수를 맞춰줌
+});
   </script>
 
 

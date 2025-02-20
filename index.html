@@ -7,38 +7,60 @@
   <meta name="viewport" content="width=1400">
   <title>arbe_main</title>
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="shortcut icon" href="img/favicon_png.png" type="image/x-icon">
   <!--aos-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
+<!--   <div class="swiper arbe_main">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="#"><img src="img/top_baner.png" alt="top_baner"></a></div>
+      <div class="swiper-slide"><a href="#"><img src="img/top_baner.png" alt="top_baner"></a></div>
+    </div>
+  </div> -->
 <div class="swiper arbe_main">
   <div class="swiper-wrapper">
     <div class="swiper-slide"><a href="#"><img src="img/top_baner.png" alt="top_baner"></a></div>
     <div class="swiper-slide"><a href="#"><img src="img/top_baner.png" alt="top_baner"></a></div>
+    <div class="swiper-slide"><a href="#"><img src="img/top_baner.png" alt="top_baner"></a></div> <!-- 추가 -->
   </div>
 </div>
 
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".arbe_main", {
-      direction: "vertical",
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      autoplay: {
-        delay: 1800,
-        disableOnInteraction: false,
-      },
-      loop: true,
-    });
+    // var swiper = new Swiper(".arbe_main", {
+    //   direction: "vertical",
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //   },
+    //   autoplay: {
+    //     delay: 1800,
+    //     disableOnInteraction: false,
+    //   },
+    //   loop: true,
+    // });
+var swiper = new Swiper(".arbe_main", {
+  direction: "vertical",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 1800,
+    disableOnInteraction: false,
+  },
+  loop: false, // 루프 비활성화
+});
+
   </script>
- <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 
   <div id="header">
     <!--header-->
@@ -119,6 +141,9 @@
     </div>
   </div>
   <!--arrow_box-->
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>

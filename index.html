@@ -15,43 +15,37 @@
 </head>
 
 <body>
-  <div class="swiper arbe_main">
+<!--   <div class="swiper arbe_main">
     <div class="swiper-wrapper">
       <div class="swiper-slide"><a href="#"><img src="img/top_baner.png" alt="top_baner"></a></div>
       <div class="swiper-slide"><a href="#"><img src="img/top_baner.png" alt="top_baner"></a></div>
     </div>
+  </div> -->
+<div class="swiper arbe_main">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><a href="#"><img src="img/top_baner.png" alt="top_baner"></a></div>
+    <div class="swiper-slide"><a href="#"><img src="img/top_baner.png" alt="top_baner"></a></div>
+    <div class="swiper-slide"><a href="#"><img src="img/top_baner.png" alt="top_baner"></a></div> <!-- 추가 -->
   </div>
+</div>
 
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
-    // var swiper = new Swiper(".arbe_main", {
-    //   direction: "vertical",
-    //   pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    //   },
-    //   autoplay: {
-    //     delay: 1800,
-    //     disableOnInteraction: false,
-    //   },
-    //   loop: true,
-    // });
-var swiper = new Swiper(".arbe_main", {
-  direction: "vertical",
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  autoplay: {
-    delay: 1800,
-    disableOnInteraction: false,
-  },
-  loop: false, // 슬라이드 개수가 적을 땐 loop 비활성화
-});
-
+    var swiper = new Swiper(".arbe_main", {
+      direction: "vertical",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 1800,
+        disableOnInteraction: false,
+      },
+      loop: true,
+    });
   </script>
 
 
